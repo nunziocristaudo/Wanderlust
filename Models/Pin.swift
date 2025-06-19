@@ -1,0 +1,1 @@
+// Pin model placeholder
