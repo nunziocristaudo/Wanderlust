@@ -41,7 +41,12 @@ class MapViewController: UIViewController {
     }
 
     private func presentCategorySelection(at coordinate: CLLocationCoordinate2D) {
-        let alert = UIAlertController(title: "Pin Category", message: "Choose a category", preferredStyle: .actionSheet)
+#if targetEnvironment(macCatalyst)
+        let style: UIAlertController.Style = .alert
+#else
+        let style: UIAlertController.Style = .actionSheet
+#endif
+        let alert = UIAlertController(title: "Pin Category", message: "Choose a category", preferredStyle: style)
         for category in PinCategory.allCases {
             alert.addAction(UIAlertAction(title: category.rawValue.capitalized, style: .default) { _ in
                 self.createPin(at: coordinate, category: category)
