@@ -9,11 +9,25 @@ async function loadGallery() {
 
         const gallery = document.getElementById('gallery');
         filenames.forEach(name => {
-            const img = document.createElement('img');
-            img.src = baseURL + name;
-            img.alt = name;
-            img.loading = 'lazy';
-            gallery.appendChild(img);
+            const ext = name.split('.').pop().toLowerCase();
+
+            if (['webp', 'jpg', 'jpeg', 'png'].includes(ext)) {
+                const img = document.createElement('img');
+                img.src = baseURL + name;
+                img.alt = name;
+                img.loading = 'lazy';
+                gallery.appendChild(img);
+            } else if (ext === 'mp4') {
+                const video = document.createElement('video');
+                video.src = baseURL + name;
+                video.muted = true;
+                video.loop = true;
+                video.autoplay = true;
+                video.playsInline = true;
+                video.style.width = "100%";
+                video.style.borderRadius = "6px";
+                gallery.appendChild(video);
+            }
         });
     } catch (err) {
         console.error('Error loading images:', err);
