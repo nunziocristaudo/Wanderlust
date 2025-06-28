@@ -29,6 +29,16 @@ header {
 
 body.dark #theme-toggle {
     border-color: #f8f8f5;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 2em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.logo {
+    color: #b33b3b;
+main
 }
 
 
