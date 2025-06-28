@@ -9,34 +9,17 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 1em 2em;
     font-size: 1.5em;
+    font-weight: bold;
 }
 
 .logo {
     color: #b33b3b;
 }
 
-.kanji {
-    font-family: 'Zen Old Mincho', serif;
-}
-
-.intro h2 {
-    font-size: 2em;
-    margin-top: 0.5em;
-}
-
-.button {
-    display: inline-block;
-    margin-top: 1em;
-    padding: 0.5em 1em;
-    background-color: #b33b3b;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-}
 
 .gallery {
     display: grid;
