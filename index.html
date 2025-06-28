@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Through Stillness, A World Moves</title>
+    <title>Tiny Squares</title>
     <!-- Use relative paths so the page works when the project is served from the repo root -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="logo">●</div>
-        <h1>Photography</h1>
-        <div class="kanji">京</div>
+        <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
     </header>
     <main>
-        <section class="intro">
-            <h2>Through Stillness, A World Moves</h2>
-            <a href="portfolio.html" class="button">View Portfolio</a>
-        </section>
         <section id="gallery" class="gallery"></section>
     </main>
+    <div id="lightbox" class="lightbox hidden">
+        <button id="prev" class="nav">&#10094;</button>
+        <img id="lightbox-img" src="" alt="">
+        <button id="next" class="nav">&#10095;</button>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
