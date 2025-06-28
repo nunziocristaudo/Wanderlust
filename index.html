@@ -8,11 +8,16 @@
 </head>
 <body>
     <header>
-        <div class="logo">TinySquares</div>
+        <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
     </header>
     <main>
         <section id="gallery" class="gallery"></section>
     </main>
+    <div id="lightbox" class="lightbox hidden">
+        <button id="prev" class="nav">&#10094;</button>
+        <img id="lightbox-img" src="" alt="">
+        <button id="next" class="nav">&#10095;</button>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
