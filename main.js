@@ -34,4 +34,7 @@ async function loadGallery() {
     }
 }
 
-window.addEventListener('DOMContentLoaded', loadGallery);
+window.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    loadGallery();
+});
