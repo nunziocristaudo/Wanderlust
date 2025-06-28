@@ -91,9 +91,5 @@ window.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('contextmenu', e => e.preventDefault());
     setupThemeToggle();
     setupLightbox();
-
-window.addEventListener('DOMContentLoaded', () => {
-    document.addEventListener('contextmenu', e => e.preventDefault());
-main
     loadGallery();
 });
