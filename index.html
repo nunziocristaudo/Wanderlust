@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiny Squares</title>
+main
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="logo">TinySquares</div>
     </header>
     <main>
         <section id="gallery" class="gallery"></section>
     </main>
+    <div id="lightbox" class="lightbox hidden">
+        <button id="prev" class="nav">&#10094;</button>
+        <img id="lightbox-img" src="" alt="">
+        <button id="next" class="nav">&#10095;</button>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
